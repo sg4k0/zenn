@@ -3,7 +3,7 @@ title: "Zenn CLI環境をRemote Containersを利用して構築"
 emoji: "🐥"
 type: "tech"
 topics: ["vscode", "devcontainer", "zenn"]
-published: false
+published: true
 ---
 
 Zennの記事の投稿を行うにあたって、継続的に投稿できる環境を作成したいと思い、かつPCが破損しても再構築が簡単な状態で残したいため、Docker(devcontainer)を利用したZennCLI環境を構築しました。
@@ -114,5 +114,6 @@ https://zenn.dev/zenn/articles/connect-to-github
 ただ、コンテナが削除されたらまた一から実施する必要があり、コンテナの良さがあまり生かされないなと感じました。
 そのため、今回ライブラリなどをDocker Imageに含めてしまった環境を構築しました。
 すきあらば`docker container prune`してしまう私にはこれが一番適していました。
+拡張機能やライブラリはLintツールなどを入れても良いと思います。私も今後充実させて行きたいと考えています。
 なお、今回alpineイメージを利用しましたがその他でもいいと思います。
 どなたかのお役に立てば幸いです。
