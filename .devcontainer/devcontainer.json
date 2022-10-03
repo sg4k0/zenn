@@ -1,0 +1,12 @@
+{
+  "name": "Zenn CLI",
+  "context": "..",
+  "dockerFile": "../Dockerfile",
+  "mounts": [ 
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/zenn,target=/home/node/zenn,type=bind",
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.gitconfig,target=/home/node/.gitconfig,type=bind"
+  ],
+  "extensions": [
+    "negokaz.zenn-editor"
+  ]
+}
